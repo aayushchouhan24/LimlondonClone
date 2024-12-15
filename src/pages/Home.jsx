@@ -97,15 +97,15 @@ const courses = [
 function Home() {
     const [isHovered, setIsHovered] = useState(false)
     return <>
-        <section className="px-global pt-48 pb-48 max-991:pt-[8.5rem] max-991:pb-24 max-767:pb-16 flex justify-center flex-row">
+        <section className="px-global pt-48 pb-48 max-991:pt-[8.5rem] max-479:pt-[6.5rem] max-991:pb-24 max-767:pb-16 flex justify-center flex-row">
             <div className="max-w-[90rem] flex items-center justify-center">
-                <div className="w-[80%] max-991:w-full max-991:py-32 mt-[.21rem]">
+                <div className="w-[80%] max-991:w-full max-991:py-32  max-479:py-0  mt-[.21rem]">
                     <PlayLottie height='100%' autoplay loop animationData={live} />
                 </div>
             </div>
         </section>
-        <section className="px-global pb-[22rem]">
-            <div className="flex flex-col items-center justify-center text-center font-darker leading-[.76] tracking-[-3px] max-991:tracking-[-1px] font-semibold text-[5.5rem] max-991:text-[3rem]">
+        <section className="px-global pb-[22rem] max-479:pb-[12rem]">
+            <div className="flex flex-col items-center justify-center text-center font-darker leading-[.76] tracking-[-3px] max-991:tracking-[-1px] font-semibold text-[5.5rem] max-991:text-[3rem] ">
                 <div className="max-767:hidden items-center text-center wrap mb-16">
                     <div className="flex justify-center">
                         <span>You just need a midi </span>
@@ -123,7 +123,7 @@ function Home() {
                     </div>
                 </div>
 
-                <div className=" hidden max-767:block items-center text-center wrap font-darker leading-[1.7rem] tracking-[0] max-479:tracking-[-2px] font-semibold max-767:text-[2rem] mb-16">
+                <div className=" hidden max-767:block items-center text-center wrap font-darker leading-[1.7rem] tracking-[0] max-479:tracking-[-2px] font-semibold max-767:text-[2rem] max-479:text-[3rem] max-479:leading-[1]  mb-16">
                     <span>You just need a</span>
                     <div className="flex justify-center">
                         <span> midi</span>
