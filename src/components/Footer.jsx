@@ -13,7 +13,7 @@ const Footer = () => {
     }
 
     return <footer className=" bg-brand-color">
-        <div className="w-full max-w-[90rem] mx-auto pt-[13.75rem] pb-20 max-991:pb-12 max-479:pt-[3.1rem] max-479:pb-16 text-black-main">
+        <div className="w-full max-w-[90rem] mx-auto pt-[13.75rem] pb-20 max-991:pb-12 max-479:pt-[3.1rem] max-479:pb-16 text-black-main overflow-hidden">
             <motion.div onViewportEnter={handleScroll} className="w-[130%]">
                 <PlayLottie height='100%' animationData={footer} ref={lottieRef} />
             </motion.div>

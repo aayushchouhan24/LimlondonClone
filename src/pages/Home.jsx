@@ -167,7 +167,7 @@ function Home() {
                     <span>music production</span>
                 </h1>
             </div>
-            <div>
+            <div className="overflow-hidden">
                 {textData.map(({ reverse, text, coloredIndex }, index) => {
                     const parts = text.split('   ')
                     return (
